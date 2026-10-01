@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Site footer
+   ========================================================================== */
+.site-footer {
+  position: relative;
+  overflow: hidden;
+  color: rgba(228, 233, 255, 0.78);
+  background:
+    radial-gradient(60% 120% at 100% 0%, rgba(72, 54, 184, 0.38), transparent 60%),
+    radial-gradient(45% 80% at 0% 100%, rgba(33, 184, 165, 0.14), transparent 60%),
+    linear-gradient(160deg, var(--c-navy-900) 0%, #141f4d 55%, var(--c-plum-800) 100%);
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--gradient-accent);
+  opacity: 0.85;
+}
+
+.site-footer__bottom {
+  padding-block: 1.75rem calc(1.75rem + env(safe-area-inset-bottom));
+  color: rgba(228, 233, 255, 0.6);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.site-footer__bottom p {
+  margin: 0;
+}
